@@ -9,55 +9,42 @@
 <body>
     <div class="container">
         <div class="game-header">
-            <h1>🐍 贪吃蛇游戏</h1>
+            <h1>🐍 贪吃蛇</h1>
             <div class="score-board">
-                <div class="score-item">
-                    <span class="label">得分:</span>
-                    <span id="score">0</span>
-                </div>
-                <div class="score-item">
-                    <span class="label">最高分:</span>
-                    <span id="highScore">0</span>
-                </div>
+                <div class="score-item"><span>得分:</span><span id="score">0</span></div>
+                <div class="score-item"><span>最高分:</span><span id="highScore">0</span></div>
             </div>
         </div>
-        
         <div class="game-wrapper">
             <canvas id="gameCanvas"></canvas>
             <div id="gameOver" class="game-over hidden">
                 <h2>游戏结束!</h2>
-                <p>你的得分: <span id="finalScore">0</span></p>
-                <button id="restartBtn" class="restart-btn">重新开始</button>
+                <p>得分: <span id="finalScore">0</span></p>
+                <button id="restartBtn">重新开始</button>
             </div>
             <div id="startScreen" class="start-screen">
-                <h2>欢迎来到贪吃蛇!</h2>
-                <p>使用方向键或 WASD 控制蛇的移动</p>
-                <button id="startBtn" class="start-btn">开始游戏</button>
+                <h2>欢迎!</h2>
+                <p>方向键或WASD控制</p>
+                <button id="startBtn">开始游戏</button>
             </div>
         </div>
-        
         <div class="controls">
-            <div class="control-buttons">
-                <button class="control-btn" id="upBtn">↑</button>
-                <div class="middle-row">
-                    <button class="control-btn" id="leftBtn">←</button>
-                    <button class="control-btn" id="downBtn">↓</button>
-                    <button class="control-btn" id="rightBtn">→</button>
-                </div>
+            <button id="upBtn">↑</button>
+            <div class="middle-row">
+                <button id="leftBtn">←</button>
+                <button id="downBtn">↓</button>
+                <button id="rightBtn">→</button>
             </div>
         </div>
-        
         <div class="instructions">
-            <h3>游戏说明</h3>
+            <h3>说明</h3>
             <ul>
-                <li>使用方向键 ↑↓←→ 或 WASD 控制蛇的移动</li>
-                <li>吃到红色食物可以增长并得分</li>
-                <li>撞到墙壁或自己的身体会游戏结束</li>
-                <li>尽可能获得更高的分数!</li>
+                <li>方向键或WASD控制移动</li>
+                <li>吃红色食物得分</li>
+                <li>撞墙或自身游戏结束</li>
             </ul>
         </div>
     </div>
-    
     <script src="game.js"></script>
 </body>
 </html>
