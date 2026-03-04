@@ -183,7 +183,7 @@ if __name__ == "__main__":
     swanlab_run = None
     if args.use_swanlab and is_main_process():
         import swanlab
-        swanlab.login(api_key="4jqfbuJs9zDRcLAMPoDQv")
+        swanlab.login(api_key="YQxoyC8TAQxLEeKR7ltpS")
 
         swanlab_id = ckp_data.get('swanlab_id') if ckp_data else None
         swanlab_run = swanlab.init(
